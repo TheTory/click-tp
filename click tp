@@ -1,0 +1,6 @@
+local Player = game.Players.LocalPlayer
+local Mouse = Player:GetMouse()
+Mouse.Button1Down:Connect(function()
+	local MousePos = Mouse.Hit
+	Player.Character.HumanoidRootPart.CFrame = MousePos + Vector3.new(0,5,0)
+end)
